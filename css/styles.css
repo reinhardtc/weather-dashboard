@@ -1,6 +1,6 @@
 .heading-container {
   color: white;
-  background-color: cornflowerblue;
+  background: linear-gradient(to right, #52baff 0%, #001cb8 100%);
 }
 #heading {
   text-align: center;
@@ -10,7 +10,7 @@
   margin-left: 25px;
 }
 
-.search-box {
+#search-box {
   margin-left: 22px;
 }
 
@@ -24,6 +24,10 @@
   height: 200px;
 }
 
+.list-group {
+  list-style: none;
+}
+
 .previous-search {
   background-color: darkgrey;
   width: 20%;
@@ -31,4 +35,9 @@
 
 .previous-search-heading {
   text-align: right;
+}
+
+.future-days-container {
+  background-color: black;
+  height: 100px;
 }

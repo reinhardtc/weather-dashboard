@@ -19,27 +19,40 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-3">
-          <div class="">
+        <div class="col-3 search-column">
+          <div class="search-area">
             <h4 id="search-heading">Search for a city</h4>
-            <input type="text" class="search-box" />
+            <input type="text" id="search-box" />
             <button class="btn btn-primary d-grid col-10 search-btn" type="button">Search</button>
+            <button class="btn btn-danger d-grid col-10 search-btn clear-history" type="button">
+              Clear History
+            </button>
+            <div class="recent-searches">
+              <h3>Recent Searches</h3>
+            </div>
           </div>
         </div>
         <div class="col-9 current-weather-display">
           <div class="row">
-            <div class="card col-4">
-              <div class="card-body">
-                <h2 class="card-title current-city"></h2>
-                <p class="card-text current-temp"></p>
-                <p class="card-text current-hum"></p>
-                <p class="card-text current-wind"></p>
-                <p class="card-text current-uv"></p>
-              </div>
+            <div class="col-6">
+              <h3 class="current-city"></h3>
+              <p class="current-temp"></p>
+              <p class="current-hum"></p>
+              <p class="current-wind"></p>
+              <p class="current-uv"></p>
             </div>
+            <div class="icon col-6"></div>
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="future col-2" id="future-day-one"></div>
+        <div class="future col-2" id="future-day-two"></div>
+        <div class="future col-2" id="future-day-three"></div>
+        <div class="future col-2" id="future-day-four"></div>
+        <div class="future col-2" id="future-day-five"></div>
+      </div>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
