@@ -14,7 +14,8 @@
   margin-left: 22px;
 }
 
-.search-btn {
+.search-btn,
+.history-btn {
   margin-top: 10px;
 }
 
@@ -37,7 +38,15 @@
   text-align: right;
 }
 
-.future-days-container {
-  background-color: black;
-  height: 100px;
+.hide {
+  display: none;
+}
+
+.future {
+  height: 200px;
+  width: 200px !important;
+  margin: 10px;
+  background-color: rgb(67, 67, 255);
+  color: white;
+  padding: 4px;
 }

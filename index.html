@@ -14,17 +14,17 @@
     <title>Weather Dashboard</title>
   </head>
   <body>
-    <div class="container heading-container">
+    <div class="container-fluid heading-container">
       <h1 id="heading">Weather Dashboard</h1>
     </div>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-3 search-column">
           <div class="search-area">
             <h4 id="search-heading">Search for a city</h4>
             <input type="text" id="search-box" />
             <button class="btn btn-primary d-grid col-10 search-btn" type="button">Search</button>
-            <button class="btn btn-danger d-grid col-10 search-btn clear-history" type="button">
+            <button class="btn btn-danger d-grid col-10 search-btn clear-history" onclick="window.localStorage.clear();" type="button">
               Clear History
             </button>
             <div class="recent-searches">
@@ -43,14 +43,16 @@
             </div>
             <div class="icon col-6"></div>
           </div>
+          <div class="future-days hide container-fluid">
+            <div class="row">
+              <div class="future" id="future-day-one"></div>
+              <div class="future" id="future-day-two"></div>
+              <div class="future" id="future-day-three"></div>
+              <div class="future" id="future-day-four"></div>
+              <div class="future" id="future-day-five"></div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="future col-2" id="future-day-one"></div>
-        <div class="future col-2" id="future-day-two"></div>
-        <div class="future col-2" id="future-day-three"></div>
-        <div class="future col-2" id="future-day-four"></div>
-        <div class="future col-2" id="future-day-five"></div>
       </div>
     </div>
     </div>
@@ -59,3 +61,17 @@
     <script src="./js/script.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+
+</div>
