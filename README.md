@@ -8,6 +8,9 @@ Each time a city is searched it is added to the list of recent searches. In orde
 
 made with HTML, CSS, and JavaScript/JQuery
 
+https://github.com/reinhardtc/weather-dashboard
+
+https://reinhardtc.github.io/weather-dashboard/
 
 ![image](https://user-images.githubusercontent.com/25352227/116833131-15cdc280-ab7d-11eb-815c-5e5c9a74e5e0.png)
 ![image](https://user-images.githubusercontent.com/25352227/116833138-22eab180-ab7d-11eb-964c-49149d4e08fc.png)
