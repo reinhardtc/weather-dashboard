@@ -4,12 +4,13 @@ var currentDay = moment().format('ddd, MMM Do YYYY');
 var cityName = document.getElementById('#search-box');
 var clearButtonEl = document.querySelector('.clear-history');
 var futureDaysEl = document.querySelector('.future-days');
+var searchHistoryArr = [];
 
 // add an event listener for the search button
 searchButtonEl.addEventListener('click', function () {
   citySearch();
   saveSearch();
-  futureDaysEl.classList.remove('hide');
+  cityName.value = '';
 });
 
 // when search button is clicked, take value of search box content, and send to API
@@ -67,7 +68,7 @@ function citySearch() {
       currentUv.textContent = 'UV Index: ' + currentCityWeather.current.uvi;
 
       // display forecast data on future-divs
-
+      futureDaysEl.classList.remove('hide');
       // day one
       var dayOneForecast = $('#future-day-one');
       var dayOneDate = $('<h4>')
@@ -173,10 +174,12 @@ function saveSearch() {
   newSave.textContent = document.querySelector('#search-box').value;
   cityName = document.querySelector('#search-box').value;
 
-  localStorage.setItem('city', cityName);
+  searchHistoryArr.push(cityName);
 }
 
 clearButtonEl.addEventListener('click', function () {
-  var historyBtn = document.querySelectorAll('.history-btn');
+  var historyBtn = document.querySelector('.history-btn');
   historyBtn.remove();
 });
+
+// function to search by history button
